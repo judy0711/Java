@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main {
+
+static Scanner userInput = new Scanner(System.in);
+
+public static void main(String[] args) {
+
+  System.out.println("Please enter your name: ");
+  if (userInput.hasNext()){
+    String name = userInput.next();
+    System.out.println("Hi "+ name + " ! if you insert two values, I will help you calculate the  standard deviation for those 2 values");
+  }
+	
+ 
+  
+  System.out.println("The first value is: ");
+  
+    double first = userInput.nextDouble();
+  
+  
+  System.out.println("The second value is: ");
+  
+    double second = userInput.nextDouble();
+
+  
+  
+  double mean1 = (first + second)/2;
+  double firstSub1 = Math.pow(first - mean1, 2);
+  double secondSub1 = Math.pow(second - mean1, 2);
+  double meandif1 = (firstSub1 + secondSub1)/2;
+  double sd1 = Math.pow(meandif1, 0.5);
+  System.out.println("The population standard deviation of these two values are " + sd1);
+
+double mean2 = (first + second)/2;
+  double firstSub2 = Math.pow(first - mean2, 2);
+  double secondSub2 = Math.pow(second - mean2, 2);
+  double meandif2 = (firstSub2 + secondSub2)/1;
+  double sd2 = Math.pow(meandif2, 0.5);
+  System.out.println("The sample standard deviation of these two values are " + sd2);
+  
+  
+ /*System.out.print("The first value: ");
+	
+	if (userInput.hasNextInt()) {
+		//.hasNextDouble
+		//.hasNextFloat
+		
+		int numberEntered = userInput.nextInt();
+		//.nextDouble();
+		//.nextLine();
+		
+		System.out.println("Your favorite number is: " + numberEntered);
+		
+	} else {
+	
+		System.out.println("Enter a number next time.");
+	} 
+  */
+
+}
+
+
+}

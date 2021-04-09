@@ -1,0 +1,30 @@
+class Main {
+  public static void main(String[] args) {
+    boolean rsvp = true;
+    int selection = 1;
+    String option1;
+    String option2;
+    
+    
+    if(rsvp == true){
+      if (selection == 1){
+        option1 = "beef." ;
+        System.out.print(option1);
+              }
+      else if(selection ==2){
+        option1 = "Thanks for attending. You will be served chicken.";
+        System.out.print(option1);
+        }
+        else if(selection == 3){
+          option1 = "pasta";
+          System.out.print(option1);
+        }
+      else{option1 = "thank you will be served chicken";
+        System.out.print(option1);
+      }
+      
+    }
+    if (rsvp == false){
+      option1 = "Sorry you can't make it.";}
+    
+  }}
